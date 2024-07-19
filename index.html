@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Repository Fetcher</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>GitHub Repository Fetcher</h2>
+      <div class="form-group">
+        <label for="username">GitHub Username</label>
+        <input
+          type="text"
+          id="username"
+          class="form-control"
+          placeholder="Enter GitHub username"
+        />
+      </div>
+      <div class="center-button">
+        <button id="fetchBtn" class="btn btn-danger">Fetch Repositories</button>
+      </div>
+      <div id="repoList" class="mt-4"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
